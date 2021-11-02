@@ -1,0 +1,55 @@
+body {
+  background-color: #fbfbfd;
+}
+
+#app-filters {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+} 
+
+label {
+padding: 5px;
+}
+
+#campaign-search, button, input, select {
+  line-height: 30px;
+  border-radius: 8px;
+  padding: 0 15px;
+  background-color: #ffedd7;
+  border: none;
+  height: 30px;
+  color: #f29c24;
+}
+#campaign-search, button {
+  color: #f29c24;
+}
+
+button:hover {
+  background-color: #f29c24;
+  color: #ffedd7;
+  transition-duration: 0.4s;
+}
+
+#campaign-start {
+  margin-bottom: 15px;
+}
+
+#campaign-list li > * {
+  margin-right: 15px;
+}
+#campaign-list, li {
+  list-style: none;
+  padding: 10px;
+}
+#campaign-list, ul {
+  background-color: #ffe4c4;
+}
+
+#campaign-form {
+  display: none;
+}

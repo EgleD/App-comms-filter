@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>APP communication</title>
+</head>
+<body>
+  <main id="app">
+    <div>
+      <input type="text" id="campaign-search" placeholder="Search campaign..."/>
+      <button id="addCampaign">Add new</button>
+      <hr />
+    </div>
+    <!-- filter section
+    <section id="app-filters">
+      <select name="region" id="region">
+        <option value="na">North America</option>
+        <option value="eucis">EU & CIS</option>
+        <option value="laca">LACA</option>
+        <option value="apac">APAC</option>
+        <option value="mea">MEA</option>
+      </select>
+      <select name="country" id="country">
+        <option value="us">USA</option>
+        <option value="fr">France</option>
+        <option value="uk">United Kingdom</option>
+        <option value="de">Germany</option>
+        <option value="au">Australia</option>
+        <option value="ca">Canada</option>
+      </select>
+      <button id="filter">Filter</button>
+    </section> -->
+ 
+    <!-- campaign form section -->
+    <section id="campaign-form">
+      <form>
+        <label for="campaign-name">Campaign name</label>
+        <input type="text" id="campaign-name" required>
+        <label for="campaign-region">Region</label>
+          <select name="campaign-region" id="campaign-region">
+            <option value="na" selected>North America</option>
+            <option value="eucis">EU & CIS</option>
+            <option value="laca">LACA</option>
+            <option value="apac">APAC</option>
+            <option value="mea">MEA</option>
+          </select>
+        <label for="campaign-country">Country</label>
+          <select name="campaign-country" id="campaign-country">
+            <option value="usa" selected>USA</option>
+            <option value="fr">France</option>
+            <option value="uk">United Kingdom</option>
+            <option value="de">Germany</option>
+            <option value="au">Australia</option>
+            <option value="ca">Canada</option>
+          </select>
+        <label for="campaign-status">Status</label>
+          <select name="campaign-status" id="campaign-status">
+            <option value="live" selected>Live</option>
+            <option value="planned">Planned</option>
+            <option value="on-hold">On hold</option>
+          </select>
+          <label for="campaign-image">Image URL</label>
+          <input type="text" id="campaign-image">
+          <label for="campaign-start">Start date:</label>
+          <input type="date" id="campaign-start" name="campaign-start"
+          value="" required>
+          <button type="submit" id="campaign-subbmit-btn">Add campaign</button>
+      </form>
+    </section>
+
+
+  </main>
+  
+  <script src="index.js"></script>
+</body>
+</html>
